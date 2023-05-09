@@ -33,4 +33,6 @@ jobs:
       - run: |
              java --version
              ls -ltr
+             chmod 777 gradlew
+             ./gradlew clean build
              echo "Step is done"

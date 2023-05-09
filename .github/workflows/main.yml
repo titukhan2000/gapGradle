@@ -32,7 +32,9 @@ jobs:
           distribution: 'temurin'
       - run: |
              java --version
-             ls -ltr
              chmod 777 gradlew
              ./gradlew clean build
+             ls -ltr
+             cd build/libs
+             ls -ltr
              echo "Step is done"
